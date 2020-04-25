@@ -4,6 +4,10 @@
     margin: 5px;
 }
 
+.texto-header{
+    background-color: #3A2144;
+}
+
 @media(min-width: 720px){
     .logo{
         width: 250px;

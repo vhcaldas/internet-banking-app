@@ -1,9 +1,42 @@
-<main class="text-center">
-    <img class="logo" src="../../assets/Logo-exemplo.jpg">
-
-    <form>
-
-    </form>
+<main class="container">
+    <img class="logo" src="../../assets/logo-exemplo.jpeg">
+    
+        <form #form='ngForm' (ngSubmit)="onSubmit(form)" class="pt-5 formulario">
+            <div class="p-2 text-left">
+                <label>Digite o número de sua agência:</label>
+                <input 
+                type='number' class="form-control" 
+                placeholder="Agência" name='agencia'
+                [(ngModel)]= 'agencia' required number>
+                <p class="text-danger" *ngIf='form.controls.agencia.invalid && form.controls.agencia.touched'>Agência inválida</p>
+            </div>
+    
+            <div class="p-2 text-left">
+                <label>Digite o número de sua conta corrente:</label>
+                <input 
+                type='number' class="form-control" 
+                placeholder="Conta corrente" name='conta'
+                [(ngModel)]= 'conta' required number>
+                <p class="text-danger" *ngIf='form.controls.conta.invalid && form.controls.conta.touched'>Conta inválida</p>
+            </div>
+    
+            
+    
+            <div class="p-2 text-left">
+                <label>Digite sua senha:</label>
+                <input 
+                type='password' class="form-control" 
+                placeholder="Digite a senha" name='password' 
+                [(ngModel)]= 'password' required>
+                <p class="text-danger" *ngIf='form.controls.password.invalid && form.controls.password.touched'>Digite uma senha</p>
+            </div>
+    
+            <div class="p-2">
+                <button class="btn btn-costumer btn-block" type="submit">ENVIAR</button>
+            </div>
+    
+        </form>
+        
 
 </main>
 

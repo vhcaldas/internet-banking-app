@@ -2,6 +2,10 @@ footer{
     font-size: 1rem;
    background-color: #3A2144;
    color: #FFFFF2;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
 }
 
 a{
