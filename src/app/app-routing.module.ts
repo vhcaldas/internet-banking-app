@@ -22,7 +22,7 @@ const routes: Routes = [{
     component: TranferenciaComponent
   }, {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full',
   }, {
     path: '**',
