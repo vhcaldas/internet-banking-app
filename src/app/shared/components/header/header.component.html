@@ -1,7 +1,18 @@
-<header class="text-center">
-    <img class="logo" src="../../../../assets/logo-exemplo.jpeg"> 
-    <div class=" d-md-flex justify-content-md-around align-items-md-center text-white texto-header">
-        <p> Aqui vai o nome do usuário</p>
-        <p>Aqui vai a agência e conta do usuário</p>
+<header class="text-center d-md-flex ml-5 mr-5 ">
+
+    <div>
+        <img class="logo" src="../../../../assets/logo-exemplo.jpeg"> 
+        <P>Login em:{{data | date: 'medium'}}</P>
+    </div>
+    <div class="d-md-flex justify-content-md-around align-items-md-center text-white texto-header">        
+        
+        <div class="text-md-left text-center">
+            <p> Aqui vai o nome do usuário</p>
+            <p>Aqui vai a agência e conta do usuário</p>
+        </div>
+        
+        <div>
+            <h3>SALDO</h3>
+        </div>
     </div>
 </header>
