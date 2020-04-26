@@ -8,7 +8,7 @@
                 type='number' class="form-control" 
                 placeholder="Agência" name='agencia'
                 [(ngModel)]= 'agencia' required number>
-                <p class="text-danger" *ngIf='form.controls.agencia.invalid && form.controls.agencia.touched'>Agência inválida</p>
+                <p class="text-danger" *ngIf="msgError('agencia',form)">Agência inválida</p>
             </div>
     
             <div class="p-2 text-left">
@@ -17,7 +17,7 @@
                 type='number' class="form-control" 
                 placeholder="Conta corrente" name='conta'
                 [(ngModel)]= 'conta' required number>
-                <p class="text-danger" *ngIf='form.controls.conta.invalid && form.controls.conta.touched'>Conta inválida</p>
+                <p class="text-danger" *ngIf="msgError('conta',form)">Conta inválida</p>
             </div>
     
             
@@ -28,7 +28,7 @@
                 type='password' class="form-control" 
                 placeholder="Digite a senha" name='password' 
                 [(ngModel)]= 'password' required>
-                <p class="text-danger" *ngIf='form.controls.password.invalid && form.controls.password.touched'>Digite uma senha</p>
+                <p class="text-danger" *ngIf="msgError('password',form)">Digite uma senha</p>
             </div>
     
             <div class="p-2">

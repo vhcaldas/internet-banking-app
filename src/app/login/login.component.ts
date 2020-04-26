@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { LoginService } from './login.service';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -11,9 +13,15 @@ export class LoginComponent implements OnInit {
   conta: number;
   password: any;
 
-  constructor() { }
+  constructor(
+    private loginService: LoginService
+  ) { }
 
   ngOnInit(): void {
+    this.loginService.getLogin()
+    .subscribe(response => {
+      console.log(response);
+    });
   }
 
   onSubmit(form){
@@ -24,6 +32,13 @@ export class LoginComponent implements OnInit {
     console.log(this.agencia);
     console.log(this.conta);
     console.log(this.password);
+  }
+
+  msgError(nomeControle: string, form){
+    if (!form.controls[nomeControle]){
+      return false;
+    }
+    return form.controls[nomeControle].invalid && form.controls[nomeControle].touched;
   }
 
 }
