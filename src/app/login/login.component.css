@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    height: 60px;
+    margin: 5px;
+}
+
+.formulario{
+    width: 50%;      
+}
+
+.btn-costumer{
+    background-color: #FFE521;
+    color: #3a2144;
+    font-weight: bold;
+  
+}
+
+@media(min-width: 720px){
+    .logo{
+        width: 250px;
+        height: 100px;
+        margin: 20px;
+    }
+}
+
+@media(max-width: 540px){
+    label{
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width: 385px){
+    label{
+        text-align: center;
+    }
+}
