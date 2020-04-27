@@ -5,7 +5,9 @@ import { ExtratoComponent } from './extrato/extrato.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RotaNaoEncontradaComponent } from './rota-nao-encontrada/rota-nao-encontrada.component';
-import { TranferenciaComponent } from './tranferencia/tranferencia.component';
+import { TransferenciaComponent } from './transferencia/transferencia.component';
+import { PagefinalComponent } from './pagefinal/pagefinal.component';
+
 
 
 const routes: Routes = [{
@@ -18,8 +20,11 @@ const routes: Routes = [{
     path: 'extrato',
     component: ExtratoComponent,
   }, {
-    path: 'tranferencia',
-    component: TranferenciaComponent
+    path: 'transferencia',
+    component: TransferenciaComponent
+  }, {
+    path: 'pagefinal',
+    component: PagefinalComponent
   }, {
     path: '',
     redirectTo: 'login',
