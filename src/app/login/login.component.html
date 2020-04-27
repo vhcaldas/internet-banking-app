@@ -19,8 +19,7 @@
                 ngModel required number>
                 <p class="text-danger" *ngIf="msgError('conta',form)">Conta inválida</p>
             </div>
-    
-            
+               
     
             <div class="p-2 text-left">
                 <label>Digite sua senha:</label>
@@ -34,6 +33,8 @@
             <div class="p-2">
                 <button class="btn btn-costumer btn-block" type="submit">ENVIAR</button>
             </div>
+
+            <h3 class="text-center text-danger" *ngIf='erro'>Senha ou conta inválida</h3>
     
         </form>
         

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { LoginService } from './login.service';
 
@@ -9,8 +10,10 @@ import { LoginService } from './login.service';
 })
 export class LoginComponent implements OnInit {
 
+  erro = false;
   constructor(
-    private loginService: LoginService
+    private loginService: LoginService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -25,6 +28,11 @@ export class LoginComponent implements OnInit {
     this.loginService.getLogin(form.value)
     .subscribe(response => {
       console.log(response);
+      if(response != null){
+        this.router.navigate(['/home']);
+      } else {
+        return this.erro = true;
+      }
     });
 
   }
