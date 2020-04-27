@@ -11,7 +11,8 @@ import { LoginComponent } from './login/login.component';
 import { RotaNaoEncontradaComponent } from './rota-nao-encontrada/rota-nao-encontrada.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { HeaderComponent } from './shared/components/header/header.component';
-import { TranferenciaComponent } from './tranferencia/tranferencia.component';
+import { TransferenciaComponent } from './transferencia/transferencia.component';
+import { PagefinalComponent } from './pagefinal/pagefinal.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +21,10 @@ import { TranferenciaComponent } from './tranferencia/tranferencia.component';
     HeaderComponent,
     LoginComponent,
     ExtratoComponent,
-    TranferenciaComponent,
     HomeComponent,
-    RotaNaoEncontradaComponent
+    RotaNaoEncontradaComponent,
+    TransferenciaComponent,
+    PagefinalComponent
   ],
   imports: [
     BrowserModule,

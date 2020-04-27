@@ -4,17 +4,21 @@
 [clienteConta]= 'cliente.ContaCorrente'
 ></app-header>
 
-<main class="container d-flex center;">
-    <div class="menu-esquerdo">
+<main>
+   <div>
+       <a class="m-5 btn-outline-warning" routerLink="/pagefinal" routerLinkActive="ativado">SAIR</a>
+   </div>
+    <div class="menu">
         <a routerLink="/transferencia" routerLinkActive="ativado">
-        <button type="button" class="btn btn-outline-warning btn-lg btn-block">Fazer transferencia</button></a><br>
+        <button type="button" class="btn btn-outline-warning btn-lg btn-block btn-menu">Fazer transferencia</button></a>
 
         <a routerLink="/extrato" routerLinkActive="ativado">
-        <br><button type="button" class="btn btn-outline-warning btn-lg btn-block">Ver extrato</button></a><br>
+        <button type="button" class="btn btn-outline-warning btn-lg btn-block btn-menu">Ver extrato</button></a>
 
-        <a routerLink="/links" routerLinkActive="ativado">
-        <br><button type="button" class="btn btn-outline-warning btn-lg btn-block">Links úteis</button></a>
+        <a href="https://divas-gamaacademy.netlify.app/" target="_blank" class="btn btn-outline-warning btn-lg btn-block btn-menu">Links úteis</a>
     </div>
-    </main>
+
+    <router-outlet></router-outlet>
+</main>
 
 <app-footer></app-footer>

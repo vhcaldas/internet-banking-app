@@ -1,8 +1,4 @@
-.container-home{    
-    margin: 0 auto;
-}
-
-.menu-esquerdo{
+.menu{
 
     width: 100%;
     text-align: center;
@@ -12,7 +8,12 @@
     
 }
 
-.menu-direito{
-    background-color: cornflowerblue;
+.btn-menu{
+    width: 78%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
 
+a{
+    text-decoration: none;
 }
