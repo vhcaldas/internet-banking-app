@@ -4,11 +4,17 @@
 [clienteConta]= 'cliente.ContaCorrente'
 ></app-header>
 
-<main class="d-flex">
-    <div class="menu-esquerdo"></div>
-    <div class="menu-direito"></div>
+<main class="container d-flex center;">
+    <div class="menu-esquerdo">
+        <a routerLink="/transferencia" routerLinkActive="ativado">
+        <button type="button" class="btn btn-outline-warning btn-lg btn-block">Fazer transferencia</button></a><br>
 
-  
-</main>
+        <a routerLink="/extrato" routerLinkActive="ativado">
+        <br><button type="button" class="btn btn-outline-warning btn-lg btn-block">Ver extrato</button></a><br>
+
+        <a routerLink="/links" routerLinkActive="ativado">
+        <br><button type="button" class="btn btn-outline-warning btn-lg btn-block">Links úteis</button></a>
+    </div>
+    </main>
 
 <app-footer></app-footer>

@@ -3,13 +3,16 @@
 }
 
 .menu-esquerdo{
-    background-color: coral;
-    
+
+    width: 100%;
+    text-align: center;
+    padding: 15px 20px 30px;
+    border-radius: 10px;
+    font-size: 18px;
     
 }
 
 .menu-direito{
     background-color: cornflowerblue;
-   
-   
+
 }
