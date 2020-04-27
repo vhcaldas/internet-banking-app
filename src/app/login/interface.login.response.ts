@@ -3,5 +3,4 @@ export interface LoginResponse{
     NomeCompleto: string;
     Agencia: number;
     ContaCorrente: number;
-
 }

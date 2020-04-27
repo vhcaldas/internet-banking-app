@@ -28,8 +28,10 @@ export class LoginComponent implements OnInit {
     this.loginService.getLogin(form.value)
     .subscribe(response => {
       console.log(response);
-      if(response != null){
-        this.router.navigate(['/home']);
+      if (response != null){
+        this.router.navigateByUrl('/home', {
+          state: {cliente: response}
+        });
       } else {
         return this.erro = true;
       }

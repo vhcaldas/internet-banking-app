@@ -1,8 +1,14 @@
-<app-header></app-header>
+<app-header
+[clienteNome]= 'cliente.NomeCompleto'
+[clienteAgencia]= 'cliente.Agencia'
+[clienteConta]= 'cliente.ContaCorrente'
+></app-header>
 
 <main class="d-flex">
-    <div class="menu-esquerdo">Coisas aqui</div>
-    <div class="menu-direito">Coisas aqui tb</div>
+    <div class="menu-esquerdo"></div>
+    <div class="menu-direito"></div>
+
+  
 </main>
 
 <app-footer></app-footer>
