@@ -21,5 +21,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
 
   }
+  onClick(){
+    localStorage.removeItem('cliente');
+  }
 
 }

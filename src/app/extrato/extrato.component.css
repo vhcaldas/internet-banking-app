@@ -1,0 +1,18 @@
+.data-desktop{
+    display: none;
+}
+
+.tipo{
+    font-size: 0.8rem;
+}
+
+@media(min-width: 575px){
+    .data-desktop{
+        display: inline;
+    }
+
+    .data-mobile{
+        display: none;
+    }
+    
+}
