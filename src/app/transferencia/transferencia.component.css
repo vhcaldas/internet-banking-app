@@ -1,0 +1,21 @@
+.container-transferencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.formulario{
+    width: 50%;      
+}
+
+.btn-costumer{
+    background-color: #FFE521;
+    color: #3a2144;
+    font-weight: bold;
+  
+}
+
+.ng-invalid.ng-touched{
+    border-color: red;
+}
