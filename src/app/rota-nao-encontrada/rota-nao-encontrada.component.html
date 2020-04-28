@@ -1,3 +1,18 @@
+<header class="text-center ml-5 mr-5 ">
+    
+    <div>
+        <img class="logo" src="../../../../assets/logo.png"> 
+        <P class="acesso">Acesso em: {{data | date: 'medium'}}</P>
+    </div>
+    
+    <div class="menu-sair">
+        <a class="btn btn-outline-warning" routerLink="/pagefinal" routerLinkActive="ativado" (click)='onClick()'>SAIR</a>
+    </div>
+
+    <div class="menu-voltar">
+        <a class="btn btn-outline-warning" routerLink="/home" routerLinkActive="ativado">HOME</a>
+    </div>
+
 <div class="pagenotfound">
     <img src="../../../../assets/pagenotfound.png">
 </div>

@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RotaNaoEncontradaComponent implements OnInit {
 
+  data = new Date();
+  
   constructor() { }
 
   ngOnInit(): void {

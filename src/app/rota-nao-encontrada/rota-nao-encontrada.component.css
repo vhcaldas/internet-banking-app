@@ -1,6 +1,94 @@
 .pagenotfound{
     width: 50;
-    margin: 10;
+    margin-top: 80px;
     display: flex;
     justify-content: center;
+}
+
+
+.texto-header{
+    margin: 0 auto;
+    background-color: #3A2144;
+    width: 70%;  
+    padding-top: 10px;  
+}
+
+.acesso{
+    font-size: 0.9rem;
+}
+
+.menu-sair{
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    top: 12px
+    
+}
+
+.menu-voltar{
+    height: 25px;
+    position: absolute;
+    left: 10px;
+    top: 12px
+    
+}
+
+@media(max-width: 760px){
+     .texto-header{
+         width: 80%;
+         padding-top: 15px;
+         padding-bottom: 15px;      
+     }
+}
+
+@media(max-width: 490px){
+    .texto-header{
+       font-size: 0.9rem;      
+    }
+}
+
+@media(min-width: 520px){
+    .menu-sair{
+      top: 30px ;
+      right: 50px;
+    }
+    .menu-voltar{
+        top: 30px ;
+        left: 50px;
+      }
+}
+
+
+@media(min-width: 850px){
+    .menu-sair{
+      top: 40px ;
+      right: 100px;
+    }
+    .menu-voltar{
+        top: 40px ;
+        left: 100px;
+      }
+}
+
+@media(min-width: 1200px){
+    .menu-sair{
+      top: 50px ;
+      right: 180px;
+    }
+    .menu-voltar{
+        top: 50px ;
+        left: 180px;
+      }
+}
+
+
+@media(min-width: 1400px){
+    .menu-sair{
+      top: 50px ;
+      right: 250px;
+    }
+    .menu-voltar{
+        top: 50px ;
+        left: 250px;
+      }
 }
