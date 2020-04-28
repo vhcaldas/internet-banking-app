@@ -1,9 +1,14 @@
-<header class="text-center d-md-flex ml-5 mr-5 ">
-
+<header class="text-center ml-5 mr-5 ">
+    
     <div>
-        <img class="logo" src="../../../../assets/logo-exemplo.jpeg"> 
-        <P>Login em:{{data | date: 'medium'}}</P>
+        <img class="logo" src="../../../../assets/logo.png"> 
+        <P>Último acesso: {{data | date: 'medium'}}</P>
     </div>
+    
+    <div class="menu-sair">
+        <a class="m-5 btn-outline-warning" routerLink="/pagefinal" routerLinkActive="ativado">SAIR</a>
+    </div>
+
     <div class="d-md-flex justify-content-md-around align-items-md-center text-white texto-header">        
         
         <div class="text-md-left text-center">

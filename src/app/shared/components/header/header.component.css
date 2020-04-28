@@ -1,15 +1,15 @@
 
-.logo{
-    width: 120px;
-    height: 70px;
-    margin: 5px;
-}
-
 .texto-header{
     margin: 0 auto;
     background-color: #3A2144;
     width: 70%;  
     padding-top: 10px;  
+}
+
+.menu-sair{
+    position: absolute;
+    right: 255px;
+    top: 33px;
 }
 
 @media(max-width: 760px){
@@ -23,5 +23,53 @@
 @media(max-width: 490px){
     .texto-header{
        font-size: 0.9rem;      
+    }
+}
+
+@media(max-width: 1135px){
+    .menu-sair{
+       right: 200px;     
+    }
+}
+
+
+@media(max-width: 1000px){
+    .menu-sair{
+       right: 160px;     
+    }
+}
+
+
+@media(max-width: 850px){
+    .menu-sair{
+       right: 131px;     
+    }
+}
+
+
+@media(max-width: 760px){
+    .menu-sair{
+       right: 50px;     
+    }
+}
+
+
+@media(max-width: 620px){
+    .menu-sair{
+       right: 24px;     
+    }
+}
+
+
+@media(max-width: 450px){
+    .menu-sair{
+       right: 15px;     
+    }
+}
+
+
+@media(max-width: 415px){
+    .menu-sair{
+       right: 0;     
     }
 }
