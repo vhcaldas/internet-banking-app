@@ -10,12 +10,16 @@ export class HeaderComponent implements OnInit {
  @Input() clienteNome: string;
  @Input() clienteAgencia: string;
  @Input() clienteConta: string;
+ @Input() saldoCliente: number;
+
+
 
   data = new Date();
 
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
