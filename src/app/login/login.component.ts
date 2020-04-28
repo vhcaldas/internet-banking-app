@@ -29,9 +29,8 @@ export class LoginComponent implements OnInit {
     .subscribe(response => {
       console.log(response);
       if (response != null){
-        this.router.navigateByUrl('/home', {
-          state: {cliente: response}
-        });
+        localStorage.setItem("cliente", JSON.stringify(response));
+        this.router.navigateByUrl('/home');
       } else {
         return this.erro = true;
       }

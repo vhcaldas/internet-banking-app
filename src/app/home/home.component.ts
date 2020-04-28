@@ -1,8 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 
 import { LoginResponse } from '../login/interface.login.response';
-
 
 @Component({
   selector: 'app-home',
@@ -14,13 +13,13 @@ export class HomeComponent implements OnInit {
  cliente: LoginResponse;
 
 
-
-  constructor(private router: Router) {
-    const nav = this.router.getCurrentNavigation();
-    this.cliente = nav.extras.state.cliente;
-   }
+  constructor(
+    private http: HttpClient
+  ) { }
 
   ngOnInit(): void {
-  console.log(this.cliente.Agencia);
+
+    this.cliente = JSON.parse(localStorage.getItem('cliente'));
+
   }
 }
