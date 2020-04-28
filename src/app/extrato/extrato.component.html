@@ -7,19 +7,24 @@
 
 <table class="container mt-5 table table-hover">
     <tr>
-        <th>Id</th>
         <th>Data</th>
         <th>Descrição</th>
         <th>Valor</th>
-        <th>Categoria</th>
+        <th class="data-desktop" >Categoria</th>
+        <tH>Tipo</tH>
     </tr>
     
     <tr *ngFor='let transacao of extratoSaldo.Extrato'>
-        <td>{{transacao.Id}}</td>
-        <td>{{transacao.DataHora | date}}</td>
-        <td>{{transacao.Descricao}}</td>
-        <td>{{transacao.Valor | currency: 'BRL'}}</td>
-        <td>{{transacao.Categoria}}</td>
+        <td class="data-desktop">{{transacao.DataHora | date: 'short'}}</td>
+        <td class="data-mobile">{{transacao.DataHora | date: 'dd/MM'}}</td>
+        <td>{{transacao.Descricao}}
+            <p class="data-mobile text-secondary"> Categoria: {{transacao.Categoria}}</p>
+        </td>
+        <td>{{transacao.Valor | currency: 'BRL'}}</td>        
+        <td class="data-desktop">{{transacao.Categoria}}</td>
+        <td class="text-success tipo" *ngIf='transacao.Valor > 0'>C</td>
+        <td class="text-danger tipo" *ngIf='transacao.Valor < 0'>D</td>
+
     </tr>
 
 </table>
