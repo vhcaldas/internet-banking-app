@@ -1,1 +1,69 @@
-<p>transferencia works!</p>
+<app-header
+[clienteNome]= 'cliente.NomeCompleto'
+[clienteAgencia]= 'cliente.Agencia'
+[clienteConta]= 'cliente.ContaCorrente'
+[saldoCliente]= 'extratoSaldo.Saldo'
+></app-header>
+
+<main class="container-transferencia">
+    <h3 class="text-center m-2">Transferência</h3>
+    <form #form='ngForm' (ngSubmit)="onSubmit(form)" class="pt-5 formulario">
+        <div class="p-2 text-left">
+            <label>Digite o valor a ser transferido:</label>
+            <input 
+            type='number' class="form-control" 
+            placeholder="Valor" name='valor'
+            ngModel required number>
+            <p class="text-danger" *ngIf="msgError('valor',form)">Digite um valor</p>
+        </div>
+
+        <div class="p-2 text-left">
+            <label>Digite o número a agência de destino:</label>
+            <input 
+            type='number' class="form-control" 
+            placeholder="Agência do destinatário" name='agenciadestino'
+            ngModel required number>
+            <p class="text-danger" *ngIf="msgError('agenciadestino',form)">Conta inválida</p>
+        </div>
+
+        <div class="p-2 text-left">
+            <label>Digite o número a conta corrente de destino:</label>
+            <input 
+            type='number' class="form-control" 
+            placeholder="Conta do destinatário" name='contadestino'
+            ngModel required number>
+            <p class="text-danger" *ngIf="msgError('contadestino',form)">Conta inválida</p>
+        </div>
+           
+
+        <div class="p-2 text-left">
+            <label>Descrição</label>
+            <input 
+            type='text' class="form-control" 
+            placeholder="Digite o motivo da transferência" name='descricao' 
+            ngModel required>
+            <p class="text-danger" *ngIf="msgError('descricao',form)">Digite uma senha</p>
+        </div>
+
+        <div class="p-2 text-left">
+            <label>Categoria</label>
+            <input 
+            type='text' class="form-control" 
+            placeholder="Ex: 'Viagens, eletrônicos'" name='descricao' 
+            ngModel required>
+            <p class="text-danger" *ngIf="msgError('descricao',form)">Digite uma senha</p>
+        </div>
+
+
+
+        <div class="p-2">
+            <button class="btn btn-costumer btn-block" type="submit">ENVIAR</button>
+        </div>
+
+        <h3 class="text-center text-danger" *ngIf='erro'>Verifque se todos os campos estão corretos</h3>
+
+    </form>
+</main>
+
+
+<app-footer></app-footer>
