@@ -29,5 +29,3 @@ export class ExtratoComponent implements OnInit {
 
 
 
-
-

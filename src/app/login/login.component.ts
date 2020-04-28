@@ -23,7 +23,8 @@ export class LoginComponent implements OnInit {
   onSubmit(form){
     if (!form.valid){
       form.controls.agencia.markAsTouched();
-      form.controls.password.markAsTouched();
+      form.controls.contacorrente.markAsTouched();
+      form.controls.senha.markAsTouched();
     }
     this.loginService.getLogin(form.value)
     .subscribe(response => {

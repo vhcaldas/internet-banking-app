@@ -1,4 +1,11 @@
-<!-- <table class="container table table-hover">
+<app-header
+    [clienteNome]= 'cliente.NomeCompleto'
+    [clienteAgencia]= 'cliente.Agencia'
+    [clienteConta]= 'cliente.ContaCorrente'
+    [saldoCliente]= 'extratoSaldo.Saldo'
+></app-header>
+
+<table class="container mt-5 table table-hover">
     <tr>
         <th>Id</th>
         <th>Data</th>
@@ -7,12 +14,14 @@
         <th>Categoria</th>
     </tr>
     
-    <tr *ngFor='let transacao of transac'>
-        <td>{{transacao.id}}</td>
-        <td>{{transacao.data | date}}</td>
-        <td>{{transacao.descricao}}</td>
-        <td>{{transacao.valor | currency: 'BRL'}}</td>
-        <td>{{transacao.categoria}}</td>
+    <tr *ngFor='let transacao of extratoSaldo.Extrato'>
+        <td>{{transacao.Id}}</td>
+        <td>{{transacao.DataHora | date}}</td>
+        <td>{{transacao.Descricao}}</td>
+        <td>{{transacao.Valor | currency: 'BRL'}}</td>
+        <td>{{transacao.Categoria}}</td>
     </tr>
 
-</table> -->
+</table>
+
+<app-footer></app-footer>
