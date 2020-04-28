@@ -1,3 +1,8 @@
+
+.home{
+    height: 100vh;
+}
+
 .menu{
 
     width: 100%;
@@ -9,9 +14,10 @@
 }
 
 .btn-menu{
-    width: 78%;
+    width: 65%;
+    height: 70px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 a{

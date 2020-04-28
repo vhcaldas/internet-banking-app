@@ -1,23 +1,26 @@
-<app-header
-[clienteNome]= 'cliente.NomeCompleto'
-[clienteAgencia]= 'cliente.Agencia'
-[clienteConta]= 'cliente.ContaCorrente'
-[saldoCliente]= 'extratoSaldo.Saldo'
-></app-header>
+<section class="home">
+    <app-header
+    [clienteNome]= 'cliente.NomeCompleto'
+    [clienteAgencia]= 'cliente.Agencia'
+    [clienteConta]= 'cliente.ContaCorrente'
+    [saldoCliente]= 'extratoSaldo.Saldo'
+    ></app-header>
+    
+    <main>
+       
+        <div class="menu">
+            <a routerLink="/transferencia" routerLinkActive="ativado">
+            <button type="button" class="btn btn-outline-warning btn-lg btn-block btn-menu">Fazer transferencia</button></a>
+    
+            <a routerLink="/extrato" routerLinkActive="ativado">
+            <button type="button" class="btn btn-outline-warning btn-lg btn-block btn-menu">Ver extrato</button></a>
+    
+            <a href="https://divas-gamaacademy.netlify.app/" target="_blank" class="btn btn-outline-warning btn-lg btn-block btn-menu">Links úteis</a>
+        </div>
+    
+        <router-outlet></router-outlet>
+    </main>
+    
+    <app-footer></app-footer>
 
-<main>
-   
-    <div class="menu">
-        <a routerLink="/transferencia" routerLinkActive="ativado">
-        <button type="button" class="btn btn-outline-warning btn-lg btn-block btn-menu">Fazer transferencia</button></a>
-
-        <a routerLink="/extrato" routerLinkActive="ativado">
-        <button type="button" class="btn btn-outline-warning btn-lg btn-block btn-menu">Ver extrato</button></a>
-
-        <a href="https://divas-gamaacademy.netlify.app/" target="_blank" class="btn btn-outline-warning btn-lg btn-block btn-menu">Links úteis</a>
-    </div>
-
-    <router-outlet></router-outlet>
-</main>
-
-<app-footer></app-footer>
+</section>
