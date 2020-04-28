@@ -22,6 +22,10 @@
   
 }
 
+.ng-invalid.ng-touched{
+    border-color: red;
+}
+
 @media(min-width: 720px){
     .logo{
         width: 250px;

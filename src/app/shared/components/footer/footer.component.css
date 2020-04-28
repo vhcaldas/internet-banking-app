@@ -3,8 +3,9 @@ footer{
    background-color: #3A2144;
    color: #FFFFF2;   
    width: 100%;  
-   margin-top: 130px;
-   padding-bottom: 5px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
     
 }
 
