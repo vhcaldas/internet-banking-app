@@ -18,6 +18,14 @@
     
 }
 
+.menu-voltar{
+    height: 25px;
+    position: absolute;
+    left: 10px;
+    top: 12px
+    
+}
+
 @media(max-width: 760px){
      .texto-header{
          width: 80%;
@@ -37,6 +45,10 @@
       top: 30px ;
       right: 50px;
     }
+    .menu-voltar{
+        top: 30px ;
+        left: 50px;
+      }
 }
 
 
@@ -45,6 +57,10 @@
       top: 40px ;
       right: 100px;
     }
+    .menu-voltar{
+        top: 40px ;
+        left: 100px;
+      }
 }
 
 @media(min-width: 1200px){
@@ -52,6 +68,10 @@
       top: 50px ;
       right: 180px;
     }
+    .menu-voltar{
+        top: 50px ;
+        left: 180px;
+      }
 }
 
 
@@ -60,4 +80,8 @@
       top: 50px ;
       right: 250px;
     }
+    .menu-voltar{
+        top: 50px ;
+        left: 250px;
+      }
 }
