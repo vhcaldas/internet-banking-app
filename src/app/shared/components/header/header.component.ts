@@ -13,7 +13,6 @@ export class HeaderComponent implements OnInit {
  @Input() saldoCliente: number;
 
 
-
   data = new Date();
 
   constructor() { }
@@ -21,6 +20,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
 
   }
+
   onClick(){
     localStorage.removeItem('cliente');
   }

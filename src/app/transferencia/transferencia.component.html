@@ -10,7 +10,7 @@
     <form #form='ngForm' (ngSubmit)="onSubmit(form)" class="pt-5 formulario">
         <div class="p-2 text-left">
             <label>Digite o valor a ser transferido:</label>
-            <input 
+            <input             
             type='number' class="form-control" 
             placeholder="Valor" name='valor'
             ngModel required number>
@@ -49,9 +49,9 @@
             <label>Categoria</label>
             <input 
             type='text' class="form-control" 
-            placeholder="Ex: 'Viagens, eletrônicos'" name='descricao' 
+            placeholder="Ex: 'Viagens, eletrônicos'" name='categoria' 
             ngModel required>
-            <p class="text-danger" *ngIf="msgError('descricao',form)">Digite uma senha</p>
+            <p class="text-danger" *ngIf="msgError('categoria',form)">Digite uma senha</p>
         </div>
 
 
