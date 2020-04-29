@@ -14,6 +14,7 @@ export class SucessoComponent implements OnInit {
 
   ngOnInit(): void {
     this.transferenciaSucesso = JSON.parse(localStorage.getItem('transferencia'));
+
     localStorage.removeItem('transferencia');
   }
 

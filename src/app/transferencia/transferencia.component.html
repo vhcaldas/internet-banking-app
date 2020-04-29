@@ -14,25 +14,25 @@
             type='number' class="form-control" 
             placeholder="Valor" name='ValorTransferido'
             ngModel required number>
-            <p class="text-danger" *ngIf="msgError('valor',form)">Digite o valor </p>
+            <p class="text-danger" *ngIf="msgError('ValorTransferido',form)">Digite o valor </p>
         </div>
 
         <div class="p-2 text-left">
             <label>Digite o número da agência de destino:</label>
             <input 
             type='number' class="form-control" 
-            placeholder="Agência do destinatário" name='agenciadestino'
+            placeholder="Agência do destinatário" name='AgenciaDestino'
             ngModel required number>
-            <p class="text-danger" *ngIf="msgError('agenciadestino',form)">Agência inválida</p>
+            <p class="text-danger" *ngIf="msgError('AgenciaDestino',form)">Agência inválida</p>
         </div>
 
         <div class="p-2 text-left">
             <label>Digite o número da conta corrente de destino:</label>
             <input 
             type='number' class="form-control" 
-            placeholder="Conta do destinatário" name='contadestino'
+            placeholder="Conta do destinatário" name='ContaDestino'
             ngModel required number>
-            <p class="text-danger" *ngIf="msgError('contadestino',form)">Conta inválida</p>
+            <p class="text-danger" *ngIf="msgError('ContaDestino',form)">Conta inválida</p>
         </div>
            
 
