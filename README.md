@@ -31,6 +31,12 @@ Para conexão com banco de dados e retorno de informações, criamos e utilizamo
    * https://internet-banking-apitransferencia.azurewebsites.net/api/transf/extrato
    * https://apiextrato20200428095025.azurewebsites.net/api/extrato/incluir
    * https://internet-baking-apilogin20200426164725.azurewebsites.net/api/clientes/conta/
+   
+Repositórios das API:
+
+  * https://dev.azure.com/vivianhcaldas/_git/internet-banking
+  * https://dev.azure.com/vivianhcaldas/internet-banking/_git/apiExtrato
+  * https://dev.azure.com/vivianhcaldas/internet-banking/_git/internet-banking-apiTransferencia
 
 ## Ferramentas e métodos utilizados
 
