@@ -1,27 +1,67 @@
-# InternetBankingApp
+# < Div >as Bank
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.2.
+O objeto do projeto é um simulador bancário onde o usuário realiza o login. Na tela inicial, o usuário pode realizar uma transferência (para conta no mesmo banco) e visualizar o extrato atualizado.
 
-## Development server
+Histórias de Usuário Implementadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  * Elaboração do layout de todas as telas; 
+  * Criar a interface e consumir API de login;
+  * Criar a interface e consumir API do extrato;
+  * Criar a interface e consumir API de transferência;
+  * Criação de rotas complementares.
 
-## Code scaffolding
+## Instalação:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+É necessário que o computador tenha o [Node.js](https://nodejs.org/)  instalado. Após fazer o clone do projeto, é necessário executar "npm install" na linha de comando. Após, executar "ng serve" para compilação. Para ver o projeto rodando no navegador, acesse "localhost:4200".
 
-## Build
+## Teste
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Para simular o login na aplicação, você pode usar os dados:
+agência 1001 / conta 45678 / senha 8957
 
-## Running unit tests
+Para simular transferência, você pode usar os dados como conta destino:
+agência 1001 / conta 12345
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Características Técnicas
 
-## Running end-to-end tests
+A estrutura do projeto foi elaborada com base em microsserviços, onde cada funcionalidade  de back-end foi construída em servidores individuais na Azure, com bancos de dados Sql separados.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Para conexão com banco de dados e retorno de informações, criamos e utilizamos as seguintes APIs:
 
-## Further help
+   * https://internet-banking-apitransferencia.azurewebsites.net/api/transf/extrato
+   * https://apiextrato20200428095025.azurewebsites.net/api/extrato/incluir
+   * https://internet-baking-apilogin20200426164725.azurewebsites.net/api/clientes/conta/
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Ferramentas e métodos utilizados
+
+O projeto foi desenvolvido com Angular 9 em Typescript, C# e .Net (aplicativo web), utilizando as seguintes ferramentas:
+
+ ## 4. Ferramentas Utilizadas
+
+* ASP .NET (.NET Framework) Web API
+* Entity Framework
+* Azure DevOps
+* Git / Github - GitFlow
+* Azure Services: SQL Databases e App Services
+* Visual Studio
+*  Visual Studio Code
+* Postman
+* Figma
+
+O CSS foi desenvolvido com bootstrap, sendo responsivo para todos os tamanhos de telas.
+
+Tempo do Projeto
+
+O projeto foi desenvolvido em 4 (quatro) dias.
+
+## Futuras Implementações
+
+   * Login validado por token de segurança;
+   * Aperfeiçoar rotas de home, extrato e transferências como rotas filhas;
+   * Aperfeiçoar e criar módulo para componentes;
+   * Emissão de comprovante com opção de download;
+   * Carregar dados do destinatário antes da confirmação de transferência;
+   * Adicionar filtro por período e paginação no extrato;
+   * Permitir transferência para outros bancos;
+   * Ordenar as operações no extrato de forma decrescente;
+   * Implementação de teste automatizados;
