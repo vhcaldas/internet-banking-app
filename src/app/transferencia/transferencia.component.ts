@@ -43,6 +43,8 @@ export class TransferenciaComponent implements OnInit {
     this.transferencia = form.value;
     this.transferencia.IdCliente = this.cliente.ContaCorrente;
     this.transferencia.ValorTransferido = this.transferencia.ValorTransferido * (-1);
+    console.log(this.transferencia + 'Verificando');
+    
     this.transferenciaService.getTransferencia(this.transferencia)
       .subscribe(response => {
         localStorage.setItem('transferencia', JSON.stringify(this.transferencia));
