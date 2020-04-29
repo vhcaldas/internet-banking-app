@@ -36,7 +36,7 @@ Para conexão com banco de dados e retorno de informações, criamos e utilizamo
 
 O projeto foi desenvolvido com Angular 9 em Typescript, C# e .Net (aplicativo web), utilizando as seguintes ferramentas:
 
- ## 4. Ferramentas Utilizadas
+ ## Ferramentas Utilizadas
 
 * ASP .NET (.NET Framework) Web API
 * Entity Framework
