@@ -12,4 +12,7 @@ export class SucessoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClick(){
+    localStorage.removeItem('cliente');
+  }
 }
