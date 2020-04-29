@@ -45,6 +45,7 @@ export class TransferenciaComponent implements OnInit {
     this.transferencia.ValorTransferido = this.transferencia.ValorTransferido * (-1);
     this.transferenciaService.getTransferencia(this.transferencia)
       .subscribe(response => {
+        localStorage.setItem('transferencia', JSON.stringify(this.transferencia));
         this.router.navigateByUrl('/sucesso');
       },
         erro => {
