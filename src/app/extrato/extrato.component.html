@@ -9,8 +9,7 @@
     <tr>
         <th>Data</th>
         <th>Descrição</th>
-        <th>Valor</th>
-        <th class="data-desktop" >Categoria</th>
+        <th>Valor</th>       
         <tH>Tipo</tH>
     </tr>
     
@@ -18,10 +17,10 @@
         <td class="data-desktop">{{transacao.DataHora | date: 'short'}}</td>
         <td class="data-mobile">{{transacao.DataHora | date: 'dd/MM'}}</td>
         <td>{{transacao.Descricao}}
-            <p class="data-mobile text-secondary"> Categoria: {{transacao.Categoria}}</p>
+            <p class="text-secondary"> Categoria: {{transacao.Categoria}}</p>
         </td>
-        <td>{{transacao.Valor | currency: 'BRL'}}</td>        
-        <td class="data-desktop">{{transacao.Categoria}}</td>
+        <td>{{transacao.Valor | currency: 'BRL'}}</td>    
+      
         <td class="text-success tipo" *ngIf='transacao.Valor > 0'>C</td>
         <td class="text-danger tipo" *ngIf='transacao.Valor < 0'>D</td>
 
