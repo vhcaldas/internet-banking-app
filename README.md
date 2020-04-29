@@ -1,6 +1,6 @@
 # < Div >as Bank
 
-O objeto do projeto é um simulador bancário onde o usuário realiza o login. Na tela inicial, o usuário pode realizar uma transferência (para conta no mesmo banco) e visualizar o extrato atualizado.
+O objetivo do projeto é um simulador bancário onde o usuário realiza o login. Na tela inicial, o usuário pode realizar uma transferência (para conta no mesmo banco) e visualizar o extrato atualizado.
 
 Histórias de Usuário Implementadas
 
@@ -12,7 +12,7 @@ Histórias de Usuário Implementadas
 
 ## Instalação:
 
-É necessário que o computador tenha o [Node.js](https://nodejs.org/)  instalado. Após fazer o clone do projeto, é necessário executar "npm install" na linha de comando. Após, executar "ng serve" para compilação. Para ver o projeto rodando no navegador, acesse "localhost:4200".
+É necessário que o computador tenha o [Node.js](https://nodejs.org/) instalado. Após fazer o clone do projeto, é necessário executar "npm install" na linha de comando. Após, executar "ng serve" para compilação. Para ver o projeto rodando no navegador, acesse "localhost:4200".
 
 ## Teste
 
@@ -44,13 +44,13 @@ O projeto foi desenvolvido com Angular 9 em Typescript, C# e .Net (aplicativo we
 * Git / Github - GitFlow
 * Azure Services: SQL Databases e App Services
 * Visual Studio
-*  Visual Studio Code
+* Visual Studio Code
 * Postman
 * Figma
 
 O CSS foi desenvolvido com bootstrap, sendo responsivo para todos os tamanhos de telas.
 
-Tempo do Projeto
+## Tempo do Projeto
 
 O projeto foi desenvolvido em 4 (quatro) dias.
 
