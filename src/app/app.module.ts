@@ -15,6 +15,7 @@ import { RotaNaoEncontradaComponent } from './rota-nao-encontrada/rota-nao-encon
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { TransferenciaComponent } from './transferencia/transferencia.component';
+import { SucessoComponent } from './sucesso/sucesso.component';
 
 
 registerLocaleData(localePt, 'pt');
@@ -29,7 +30,8 @@ registerLocaleData(localePt, 'pt');
     HomeComponent,
     RotaNaoEncontradaComponent,
     TransferenciaComponent,
-    PagefinalComponent
+    PagefinalComponent,
+    SucessoComponent
   ],
   imports: [
     BrowserModule,

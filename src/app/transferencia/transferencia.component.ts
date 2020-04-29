@@ -47,7 +47,7 @@ export class TransferenciaComponent implements OnInit {
     .subscribe(response => {
       console.log(response);
       if (response != null){
-        this.router.navigateByUrl('/pagefinal');
+        this.router.navigateByUrl('/sucesso');
       } else {
         return this.erro = true;
       }
