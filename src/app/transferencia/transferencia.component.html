@@ -12,22 +12,22 @@
             <label>Digite o valor a ser transferido:</label>
             <input             
             type='number' class="form-control" 
-            placeholder="Valor" name='valor'
+            placeholder="Valor" name='ValorTransferido'
             ngModel required number>
-            <p class="text-danger" *ngIf="msgError('valor',form)">Digite um valor</p>
+            <p class="text-danger" *ngIf="msgError('valor',form)">Digite o valor </p>
         </div>
 
         <div class="p-2 text-left">
-            <label>Digite o número a agência de destino:</label>
+            <label>Digite o número da agência de destino:</label>
             <input 
             type='number' class="form-control" 
             placeholder="Agência do destinatário" name='agenciadestino'
             ngModel required number>
-            <p class="text-danger" *ngIf="msgError('agenciadestino',form)">Conta inválida</p>
+            <p class="text-danger" *ngIf="msgError('agenciadestino',form)">Agência inválida</p>
         </div>
 
         <div class="p-2 text-left">
-            <label>Digite o número a conta corrente de destino:</label>
+            <label>Digite o número da conta corrente de destino:</label>
             <input 
             type='number' class="form-control" 
             placeholder="Conta do destinatário" name='contadestino'
@@ -36,31 +36,11 @@
         </div>
            
 
-        <div class="p-2 text-left">
-            <label>Descrição</label>
-            <input 
-            type='text' class="form-control" 
-            placeholder="Digite o motivo da transferência" name='descricao' 
-            ngModel required>
-            <p class="text-danger" *ngIf="msgError('descricao',form)">Digite uma senha</p>
-        </div>
-
-        <div class="p-2 text-left">
-            <label>Categoria</label>
-            <input 
-            type='text' class="form-control" 
-            placeholder="Ex: 'Viagens, eletrônicos'" name='categoria' 
-            ngModel required>
-            <p class="text-danger" *ngIf="msgError('categoria',form)">Digite uma senha</p>
-        </div>
-
-
-
         <div class="p-2">
-            <button class="btn btn-costumer btn-block" type="submit">ENVIAR</button>
+            <button class="btn btn-costumer btn-block" type="submit">TRANSFERIR</button>
         </div>
 
-        <h3 class="text-center text-danger" *ngIf='erro'>Verifque se todos os campos estão corretos</h3>
+        <h3 class="text-center text-danger" *ngIf='erro'>Verifique se todos os campos estão corretos</h3>
 
     </form>
 </main>

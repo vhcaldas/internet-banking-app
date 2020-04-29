@@ -18,7 +18,7 @@ export class TransferenciaService {
 
   getTransferencia(transferencia: Transferencia){
      return this.http.post(
-      'https://apiextrato20200428095025.azurewebsites.net/api/extrato/incluir',
+      'https://internet-banking-apitransferencia.azurewebsites.net/api/transf/extrato',
       JSON.stringify(transferencia),
       this.httpOptions
       );

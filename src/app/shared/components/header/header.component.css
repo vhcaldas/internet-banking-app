@@ -7,7 +7,7 @@
 }
 
 .acesso{
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .menu-sair{
@@ -37,6 +37,9 @@
 @media(max-width: 490px){
     .texto-header{
        font-size: 0.9rem;      
+    }
+    .acesso{
+      font-size: 0.8em;
     }
 }
 

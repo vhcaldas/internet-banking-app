@@ -27,14 +27,14 @@ export class TransferenciaComponent implements OnInit {
   ngOnInit(): void {
     this.cliente = JSON.parse(localStorage.getItem('cliente'));
     this.http.get(`https://apiextrato20200428095025.azurewebsites.net/api/extrato/todos/${this.cliente.ContaCorrente}`)
-    .subscribe((extrato: ExtratoSaldo) => {
-      this.extratoSaldo = extrato;
-    });
-}
+      .subscribe((extrato: ExtratoSaldo) => {
+        this.extratoSaldo = extrato;
+      });
+  }
 
 
-  onSubmit(form){
-    if (!form.valid){
+  onSubmit(form) {
+    if (!form.valid) {
       form.controls.agencia.markAsTouched();
       form.controls.contacorrente.markAsTouched();
       form.controls.senha.markAsTouched();
@@ -42,22 +42,22 @@ export class TransferenciaComponent implements OnInit {
 
     this.transferencia = form.value;
     this.transferencia.IdCliente = this.cliente.ContaCorrente;
-    this.transferencia.valor = this.transferencia.valor * (-1);
+    this.transferencia.ValorTransferido = this.transferencia.ValorTransferido * (-1);
     this.transferenciaService.getTransferencia(this.transferencia)
-    .subscribe(response => {
-      console.log(response);
-      if (response != null){
+      .subscribe(response => {
         this.router.navigateByUrl('/sucesso');
-      } else {
-        return this.erro = true;
-      }
-    });
+      },
+        erro => {
+
+          return this.erro = true;
+        }
+      );
 
     console.log(this.transferencia);
   }
 
-  msgError(nomeControle: string, form){
-    if (!form.controls[nomeControle]){
+  msgError(nomeControle: string, form) {
+    if (!form.controls[nomeControle]) {
       return false;
     }
     return form.controls[nomeControle].invalid && form.controls[nomeControle].touched;
